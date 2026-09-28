@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goilala Music Association</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:Arial;background:#0f0f0f;color:#fff;line-height:1.6}
+nav{background:#000;position:sticky;top:0;z-index:100;display:flex;justify-content:space-between;align-items:center;padding:12px 18px;border-bottom:3px solid #ffcc00}
+.logo{color:#ffcc00;font-weight:bold}
+.menu-btn{font-size:28px;cursor:pointer}
+#menu{display:none;position:absolute;top:58px;right:0;background:#1a1a1a;width:85%;max-width:320px;border-radius:0 0 0 14px;padding:10px}
+#menu.active{display:block}
+#menu a{display:block;padding:13px;border-bottom:1px solid #2a2a2a;color:#fff}
+.dropdown-content{display:none;background:#252525;margin-left:12px;border-radius:8px}
+.dropdown.open.dropdown-content{display:block}
+.hero{background:linear-gradient(#0008,#000e),url('photo1.jpg');background-size:cover;background-position:center;padding:80px 20px;text-align:center}
+.hero h1{color:#ffcc00;font-size:30px}
+.phone{font-size:24px;color:#ffcc00;font-weight:bold;margin:10px}
+.btn{display:inline-block;background:#ffcc00;color:#000;padding:12px 24px;border-radius:30px;font-weight:bold;margin:6px;text-decoration:none}
+.btn2{background:#fff}
+section{padding:18px;max-width:1000px;margin:auto}
+.card{background:#1e1e1e;border-radius:14px;padding:18px;margin:14px 0;border-left:5px solid #ffcc00}
+h2{color:#ffcc00;text-align:center;margin:15px 0}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.g-item{background:#222;border-radius:12px;overflow:hidden;border:1px solid #333}
+.g-item img{width:100%;height:180px;object-fit:cover;display:block;background:#333}
+.g-item p{padding:8px;font-size:11px;text-align:center;color:#ffcc00}
+.full{grid-column:span 2}.full img{height:260px}
+@media(max-width:600px){.gallery{grid-template-columns:1fr}.full{grid-column:span 1}}
+.banner{padding:13px;text-align:center;font-weight:bold;border-radius:10px;margin:15px 0}
+.b1{background:linear-gradient(90deg,#ffcc00,#ff9900);color:#000}
+.b2{background:linear-gradient(90deg,#ff0066,#ffcc00);color:#fff}
+.b3{background:linear-gradient(90deg,#00ccff,#0066ff);color:#fff}
+video,audio{width:100%;border-radius:12px;background:#000;margin:10px 0}
+.upload-box{border:2px dashed #ffcc00;border-radius:12px;padding:16px;text-align:center;background:#191919;margin:12px 0}
+.doc-item{background:#252525;border-radius:10px;padding:12px;margin:8px 0;display:flex;justify-content:space-between;align-items:center;border:1px solid #333}
+.doc-item a{background:#ffcc00;color:#000;padding:6px 14px;border-radius:20px;font-weight:bold;font-size:12px}
+footer{background:#000;text-align:center;padding:20px;color:#777;font-size:12px}
+</style>
+</head>
+<body>
+
+<nav>
+<div class="logo">GMA - GOILALA</div>
+<div class="menu-btn" onclick="document.getElementById('menu').classList.toggle('active')">☰</div>
+<div id="menu">
+<a href="#home">🏠 Home</a>
+<a href="#about">👥 Who We Are</a>
+<div class="dropdown" onclick="this.classList.toggle('open')">
+<a>📍 Districts ▼</a><div class="dropdown-content"><a>- Goilala</a><a>- Kairuku</a><a>- Hiri</a><a>- Abau</a><a>- Rigo</a></div>
+</div>
+<div class="dropdown" onclick="this.classList.toggle('open')">
+<a>🎵 Our Work ▼</a><div class="dropdown-content"><a href="#artist">- Artist On Stage</a><a href="#culture">- Cultural Dance</a><a href="#songs">- Songs (MP3)</a><a href="#docs">- Proposal Documents</a></div>
+</div>
+<a href="#artist">🎤 Artist</a>
+<a href="#songs">🎵 Songs</a>
+<a href="#docs">📄 Documents</a>
+<a href="#contact">📞 81698775</a>
+</div>
+</nav>
+
+<div class="hero" id="home">
+<h1>GOILALA MUSIC ASSOCIATION</h1>
+<p>Changing Mindset Through Music | Central Province<br>CMACF Bereina 2026 | Gov. Rufina Peter</p>
+<p class="phone">📞 81698775</p>
+<a class="btn" href="https://wa.me/67581698775">WhatsApp</a>
+<a class="btn btn2" href="tel:81698775">Call</a>
+</div>
+
+<section id="about">
+<div class="card">
+<h2>Who We Are</h2>
+<b>Goilala Music Association (GMA)</b> comprises youth and experienced artists from the Goilala mountains who have a deep connection to the art of music and are currently performing and recording across Port Moresby and Central Province. We have come to realize that music is a powerful tool for change — not only mentally, but in all aspects of life — which is why we are now using music to fight drug abuse, GBV, law & order issues, and to promote education, peace and culture.<br><br>
+Proudly participated in <b>Central Music Arts & Culture Festival (CMACF) in Bereina 2026</b> funded by Hon. Governor <b>Madam Rufina Peter</b>.
+</div>
+</section>
+
+<section id="artist">
+<div class="banner b2">🎤 GOILALA ARTIST - LIVE ON STAGE - BEREINA 2026</div>
+<div class="card">
+<h2>Artist Performance</h2>
+<video controls poster="photo1.jpg"><source src="video1.mp4" type="video/mp4"></video>
+<p style="font-size:12px;color:#ffcc00;text-align:center">Goilala Artist live on main stage - CMACF Bereina 2026</p>
+</div>
+</section>
+
+<section id="culture">
+<div class="banner b1">💃 CULTURAL DANCE GROUP - TRADITIONAL</div>
+<div class="gallery">
+<div class="g-item full"><img src="photo3.jpg" onerror="this.src='photo1.jpg'"><p>Cultural Dance Group - Bereina Festival</p></div>
+<div class="g-item"><img src="photo1.jpg"><p>With Governor Rufina Peter</p></div>
+<div class="g-item"><img src="photo2.jpg"><p>Festival Ground</p></div>
+</div>
+</section>
+
+<!-- NEW: SONGS SECTION -->
+<section id="songs">
+<div class="banner b3">🎵 OUR SONGS - ORIGINAL MUSIC</div>
+<div class="card">
+<h2>Listen To Our Songs</h2>
+<p style="font-size:13px;text-align:center">Stream our awareness songs for mindset change. Upload MP3 as song1.mp3, song2.mp3</p>
+
+<b>Song 1: Awareness Song - Anti Drug & GBV</b>
+<audio controls>
+<source src="song1.mp3" type="audio/mpeg">
+Upload your song as song1.mp3
+</audio>
+
+<b>Song 2: Education & Peace Song</b>
+<audio controls>
+<source src="song2.mp3" type="audio/mpeg">
+Upload as song2.mp3
+</audio>
+
+<b>Song 3: Culture & Unity Song</b>
+<audio controls>
+<source src="song3.mp3" type="audio/mpeg">
+Upload as song3.mp3
+</audio>
+
+<div class="upload-box">
+<h3 style="color:#ffcc00">📤 Upload Song Preview</h3>
+<input type="file" accept="audio/*" onchange="document.getElementById('audPrev').src=URL.createObjectURL(this.files[0]);document.getElementById('audPrev').style.display='block';document.getElementById('audPrev').play()">
+<audio id="audPrev" controls style="display:none"></audio>
+<p style="font-size:11px;color:#aaa">For permanent: In Spck upload MP3 files named song1.mp3, song2.mp3, song3.mp3 to same folder as index.html</p>
+</div>
+</div>
+</section>
+
+<!-- NEW: DOCUMENTS SECTION -->
+<section id="docs">
+<div class="banner b1">📄 FORMAL PROPOSAL DOCUMENTS FOR GOVERNOR</div>
+<div class="card">
+<h2>Proposal Documents (PDF)</h2>
+<p style="font-size:13px;text-align:center">Download our official letters and proposals for CMACF 2027</p>
+
+<div class="doc-item">
+<div><b>📄 1. Official Proposal Letter to Governor 2027</b><br><span style="font-size:11px;color:#aaa">Letter requesting to host main festival in Goilala + instrument request K25k-35k</span></div>
+<a href="proposal.pdf" download>Download PDF</a>
+</div>
+
+<div class="doc-item">
+<div><b>📄 2. GMA Profile & Activities Report Bereina 2026</b><br><span style="font-size:11px;color:#aaa">Who we are, what we did at Bereina, photos</span></div>
+<a href="profile.pdf" download>Download PDF</a>
+</div>
+
+<div class="doc-item">
+<div><b>📄 3. Budget Breakdown - Instruments & PA System</b><br><span style="font-size:11px;color:#aaa">Detailed quote for keyboard, guitars, drum, PA, generator</span></div>
+<a href="budget.pdf" download>Download PDF</a>
+</div>
+
+<div class="doc-item">
+<div><b>📄 4. Support Letter from Community</b><br><span style="font-size:11px;color:#aaa">Letters from 3 LLGs supporting GMA</span></div>
+<a href="support.pdf" download>Download PDF</a>
+</div>
+
+<div class="upload-box">
+<h3 style="color:#ffcc00">📤 How to Add Your PDF Documents</h3>
+<p style="font-size:12px;text-align:left">
+1. Create your proposal in Word on phone<br>
+2. Save / Export as PDF - name it <b>proposal.pdf</b><br>
+3. In Spck File Manager > + > Upload File > Select your proposal.pdf<br>
+4. Refresh website - Download button will work!<br><br>
+Do same for other files: profile.pdf, budget.pdf, support.pdf
+</p>
+<input type="file" accept=".pdf,.doc,.docx" onchange="alert('File selected: ' + this.files[0].name + ' - Now upload it to Spck File Manager with exact name proposal.pdf to make it downloadable')">
+</div>
+
+</div>
+</section>
+
+<section id="gallery">
+<h2>📸 Gallery With Governor</h2>
+<div class="gallery">
+<div class="g-item full"><img src="photo1.jpg"><p>With Hon. Governor Rufina Peter</p></div>
+<div class="g-item"><img src="photo2.jpg"><p>Central Province Banner</p></div>
+<div class="g-item"><img src="photo3.jpg"><p>Festival Field</p></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="card">
+<h2>Contact - 81698775</h2>
+<b>Goilala Music Association</b><br>
+Phone/WhatsApp: 81698775<br>
+Email: goilalamusic@gmail.com<br>
+<a class="btn" href="https://wa.me/67581698775">WhatsApp Us</a>
+</div>
+</section>
+
+<footer>© 2026 Goilala Music Association | Changing Mindset Through Music<br>Gov. Rufina Peter | 81698775</footer>
+
+<script>
+document.addEventListener('click',function(e){ if(!e.target.closest('nav')) document.getElementById('menu').classList.remove('active'); });
+</script>
+</body>
+</html>
